@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useApiStatus } from "./useAPIStatus";
+import { useApiStatus } from "./useApiStatus";
 import { PENDING, SUCCESS, ERROR } from "../../constant/api-status";
 
 /**

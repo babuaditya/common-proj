@@ -4,7 +4,6 @@ import axios, {
   type AxiosRequestConfig,
   type AxiosResponse,
   type CancelTokenSource,
-  type Method,
 } from 'axios';
 
 /**
