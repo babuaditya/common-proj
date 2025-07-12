@@ -2,7 +2,7 @@ import AppRoutes from './routes/AppRoutes';
 import { MantineProvider } from '@mantine/core';
 
 const App = () => (
-  <MantineProvider>
+  <MantineProvider withGlobalClasses withCssVariables>
     <AppRoutes />
   </MantineProvider>
 );
