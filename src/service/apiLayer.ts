@@ -10,7 +10,7 @@ import axios, {
  * Base URL configuration depending on the environment
  */
 const axiosParams = {
-  baseURL: process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : '/',
+  baseURL: "https://dummyjson.com/"
 };
 
 /**
@@ -83,7 +83,7 @@ const withLogger = async <T>(promise: Promise<AxiosResponse<T>>): Promise<AxiosR
   try {
     return await promise;
   } catch (error: any) {
-    if (!process.env.REACT_APP_DEBUG_API) throw error;
+    if (!import.meta.env.REACT_APP_DEBUG_API) throw error;
 
     if (axios.isAxiosError(error)) {
       if (error.response) {
